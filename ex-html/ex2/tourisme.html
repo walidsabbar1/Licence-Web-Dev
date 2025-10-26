@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="resource/flag.png">
+    <title>Tourisme au Maroc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            padding: 30px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border: 1px solid #e0e0e0;
+        }
+
+        h1 {
+            color: #c1272d;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .intro {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .cities-section {
+            margin-top: 40px;
+        }
+
+        .city-card {
+            background: #f8f8f8;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 4px solid #c1272d;
+        }
+
+        .city-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .city-name {
+            color: #c1272d;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .city-image {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 2px solid #e0e0e0;
+        }
+
+        .city-link {
+            color: #c1272d;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #c1272d;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .city-link:hover {
+            background: #c1272d;
+            color: #fff;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 50px 0;
+        }
+
+        .video-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            color: #c1272d;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .city-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Découvre le Maroc 🇲🇦</h1>
+        
+        <p class="intro">
+            Le Maroc, pays situé au nord-ouest de l'Afrique, est une destination fascinante qui mêle 
+            merveilles architecturales, paysages variés et richesse culturelle. De la Méditerranée 
+            à l'Atlantique, des montagnes de l'Atlas aux dunes du Sahara, le Maroc offre une expérience 
+            unique aux voyageurs du monde entier.
+        </p>
+
+        <section class="cities-section">
+            <div class="city-card">
+                <h2 class="city-name">Rabat</h2>
+                <img src="resource/rabat.png" 
+                     alt="Drapeau du Maroc" class="city-image">
+                <p>Capitale administrative du Maroc, Rabat est classée au patrimoine mondial de l'UNESCO. 
+                La ville abrite des monuments historiques impressionnants comme la tour Hassan et la kasbah des Oudayas.</p>
+                <a href="https://fr.wikipedia.org/wiki/Rabat" target="_blank" class="city-link">En savoir plus sur Rabat</a>
+            </div>
+
+            <div class="city-card">
+                <h2 class="city-name">Marrakech</h2>
+                <img src="resource/marakech.png" 
+                     alt="Tour Koutoubia, Marrakech" class="city-image">
+                <p>Marrakech, la "ville ocre", est célèbre pour son ambiance animée, ses souks colorés et 
+                sa place Jemaa el-Fna. La ville est une vitrine de l'artisanat marocain et de la culture berbère.</p>
+                <a href="https://fr.wikipedia.org/wiki/Marrakech" target="_blank" class="city-link">En savoir plus sur Marrakech</a>
+            </div>
+
+            <div class="city-card">
+                <h2 class="city-name">Casablanca</h2>
+                <img src="resource/casa.png" 
+                     alt="Mosquée Hassan II, Casablanca" class="city-image">
+                <p>Casablanca est la plus grande ville du Maroc et un centre économique majeur. La ville abrite 
+                la magnifique mosquée Hassan II, l'une des plus grandes mosquées au monde.</p>
+                <a href="https://fr.wikipedia.org/wiki/Casablanca" target="_blank" class="city-link">En savoir plus sur Casablanca</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="video-section">
+            <h2>Découvrez le Maroc en Vidéo</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/QipIufCH3rw&t=4s" 
+                        title="Tourisme au Maroc" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
