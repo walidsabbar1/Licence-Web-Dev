@@ -1,0 +1,30 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Verdana, sans-serif;
+  }
+  .box {
+width: 150px;
+padding: 20px;
+border: none;
+border-radius: 10px;
+margin: 10px;
+background: linear-gradient(145deg, blue, #3498db);
+height: 25px;
+color: white;
+box-shadow: 
+0 10px 20px rgba(0, 0, 0, 0.3),
+0 5px 10px rgba(0, 0, 0, 0.2),
+inset 0 -3px 10px rgba(0, 0, 0, 0.2),
+inset 0 3px 10px rgba(255, 255, 255, 0.3);
+transform: perspective(500px) rotateX(10deg);
+transition: transform 0.3s ease;
+cursor: pointer;
+}
+.box:hover {
+transform: perspective(500px) rotateX(10deg) translateZ(20px);
+box-shadow: 
+0 15px 30px rgba(0, 0, 0, 0.4),
+0 10px 15px rgba(0, 0, 0, 0.3),
+inset 0 -3px 10px rgba(0, 0, 0, 0.2),
+inset 0 3px 10px rgba(255, 255, 255, 0.3);
+}
