@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All In One - Project Summary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 50px;
+            max-width: 700px;
+            width: 100%;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .links-list {
+            list-style: none;
+        }
+
+        .links-list li {
+            margin-bottom: 15px;
+        }
+
+        .link-card {
+            display: block;
+            text-decoration: none;
+            background: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            transition: transform 0.2s;
+        }
+
+        .link-card:hover {
+            transform: translateX(10px);
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .link-title {
+            font-size: 1.3em;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .link-description {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Project Summary</h1>
+        <p class="subtitle">Navigate through the different exercises</p>
+        
+        <ul class="links-list">
+            <li>
+                <a href="ex1/index.html" class="link-card">
+                    <span class="emoji">⚽</span>
+                    <span class="link-title">Manchester United Squad</span>
+                    <div class="link-description">Display of football players with their details and transfer values</div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="ex2/tourisme.html" class="link-card">
+                    <span class="emoji">🇲🇦</span>
+                    <span class="link-title">Tourisme au Maroc</span>
+                    <div class="link-description">Discover tourism destinations in Morocco with images and videos</div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="ex3/example.html" class="link-card">
+                    <span class="emoji">📋</span>
+                    <span class="link-title">Formulaire d'inscription</span>
+                    <div class="link-description">Registration form with various input types and styling</div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="../ex-css/ex1/index.html" class="link-card">
+                    <span class="emoji">🎨</span>
+                    <span class="link-title">Mon site coloré</span>
+                    <div class="link-description">Colorful site with CSS styling and fonts practice</div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="../ex-css/ex2/flex.html" class="link-card">
+                    <span class="emoji">📦</span>
+                    <span class="link-title">Flexbox Layout</span>
+                    <div class="link-description">Demonstration of CSS flexbox properties and layout</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
